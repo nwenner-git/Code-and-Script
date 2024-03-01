@@ -1,0 +1,13 @@
+{
+    "IOKitPersonalities": {
+        "IOUSBMassStorageClass": {
+            "USBMSCEnableAsyncEventSources": false,
+            "USBMSCIgnoreClass": true,
+            "USBMSCIgnoreReserved": true,
+            "USBMSCIgnoreUMass": true,
+            "USBMSCMaxInquiryLength": 0,
+            "USBMSCMaxLUN": 0,
+            "USBMSCSimulateNotSupported": true
+        }
+    }
+}

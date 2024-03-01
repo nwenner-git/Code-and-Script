@@ -1,0 +1,34 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"s3:*"
+			],
+			"Resource": [
+				"arn:aws:s3:::pre-prod-hp-aida-docs",
+				"arn:aws:s3:::pre-prod-hp-aida-docs/*",
+				"arn:aws:s3:::pre-prod-hp-aida-profile-images",
+				"arn:aws:s3:::pre-prod-hp-aida-profile-images/*",
+				"arn:aws:s3:::pre-prod-hp-aida-gfi",
+				"arn:aws:s3:::pre-prod-hp-aida-gfi/*",
+				"arn:aws:s3:::pre-prod-hp-aida-other",
+				"arn:aws:s3:::pre-prod-hp-aida-other/*",
+				"arn:aws:s3:::pre-prod-hp-aida-cse-docs",
+				"arn:aws:s3:::pre-prod-hp-aida-cse-docs/*",
+				"arn:aws:s3:::pre-prod-hp-aida-store",
+				"arn:aws:s3:::pre-prod-hp-aida-store/*"
+			]
+			"Sid": "KMSKeyPermission",
+    		"Effect": "Allow",
+    		"Action": [
+        		"kms:Encrypt",
+        		"kms:Decrypt",
+        		"kms:ReEncrypt*",
+        		"kms:GenerateDataKey*",
+        		"kms:DescribeKey"
+    		],
+		}
+	]
+}

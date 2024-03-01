@@ -1,0 +1,75 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "NetworkingAndContentDeliveryPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:*",
+                "ec2:*",
+                "route53:*",
+                "apigateway:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "SecurityIdentityCompliancePermissions",
+            "Effect": "Allow",
+            "Action": [
+                "cloudtrail:*",
+                "cloudwatch:*",
+                "cognito-identity:*",
+                "cognito-idp:*",
+                "config:*",
+                "guardduty:*",
+                "kms:*",
+                "organizations:*",
+                "s3:*",
+                "secretsmanager:*",
+                "securityhub:*",
+                "sts:*",
+                "waf:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "DBPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:*",
+                "rds:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "CostManagementPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ce:*",
+                "savingsplans:*"
+            ],
+            "Resource": "*"
+        ,}
+       {
+            "Sid": "Misc",
+            "Effect": "Allow",
+            "Action": [
+                "devops-guru:*",
+                "elasticache:*",
+                "firehose:*",
+                "es:*",
+                "tag:*",
+                "aws-marketplace:*",
+                "pi:*",
+                "ram:*",
+                "resource-explorer:*",
+                "resource-groups:*",
+                "catalog:*",
+                "support:*",
+                "transfer:*",
+                "wellarchitected:*",
+                "elasticloadbalancing:*"
+            ]
+       }
+    ]
+}

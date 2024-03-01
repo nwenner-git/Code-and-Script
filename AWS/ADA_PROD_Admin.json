@@ -1,0 +1,39 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+                "ecr:GetAuthorizationToken",
+                "ecr:BatchGetImage",
+                "ecr:PutImage",
+                "ec2:RunInstances",
+                "ec2:TerminateInstances",
+                "ec2:DescribeInstances",
+                "eks:CreateCluster",
+                "eks:DescribeClusters",
+                "eks:DeleteCluster",
+                "elasticache:CreateCacheCluster",
+                "elasticache:DeleteCacheCluster",
+                "elasticache:DescribeCacheClusters",
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "logs:CreateLogGroup",
+                "logs:GetLogEvents",
+                "logs:PutLogEvents",
+                "rds:CreateDBInstance",
+                "rds:DeleteDBInstance",
+                "rds:DescribeDBInstances",
+                "rds:ModifyDBInstance",
+                "ssm:GetCommandInvocation",
+                "ssm:SendCommand",
+                "sts:AssumeRole",
+                "sts:GetCallerIdentity"
+			],
+			"Resource": [
+				"*"
+			]
+		}
+	]
+}

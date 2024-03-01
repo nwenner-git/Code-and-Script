@@ -1,0 +1,7 @@
+$groups=Get-AzureADGroup -All $true
+ForEach ($group in $groups){
+    $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true
+    ForEach ($member in $members){
+        Write-output $group.DisplayName "," $member.ObjectId "," $member.ObjectType $member.UserType "," $member.UserPrincipalName >> output.csv
+    }
+}
